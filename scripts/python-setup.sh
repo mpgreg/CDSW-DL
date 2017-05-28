@@ -10,7 +10,7 @@ conda create -y -n py27
 source activate py27
 conda install -y python=2.7.11
 ##Make sure that the requirements files is present
-for req in $(cat ../requirements.txt); do conda install -y $req; done
+for req in $(cat ~/scripts/requirements.txt); do conda install -y $req; done
 
 ##Install tensorflow
 conda install -y -c conda-forge tensorflow
